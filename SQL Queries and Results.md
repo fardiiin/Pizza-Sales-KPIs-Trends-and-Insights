@@ -31,32 +31,33 @@ DROP COLUMN order_date;
 SELECT ROUND(SUM(total_price), 2) AS Total_Revenue 
 FROM pizza_sales;
 ```
-picture
+![Local Image](Images_KPIs/total_revenue.jpg)
+
 
 ## Average order Values
 ```sql
 SELECT ROUND(SUM(total_price) / COUNT(DISTINCT order_id), 2) AS Avg_Order_Value 
 FROM pizza_sales;
 ```
-picture
+![Local Image](Images_KPIs/avg_order_value.jpg)
 
 ## Total Pizza Sold
 ```sql
 SELECT SUM(quantity) AS pizza_sold
 FROM pizza_sales;
 ```
-picture
+![Local Image](Images_KPIs/pizza_sold.jpg)
 
 ## Total Orders
 ```sql
 SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM pizza_sales;
 ```
-picture
+![Local Image](Images_KPIs/total_orders.jpg)
 
 ## Average Pizzas Per Order
 ```sql
 SELECT ROUND(CAST(SUM(quantity) AS DECIMAL) / COUNT(DISTINCT order_id) , 2) AS Avg_Pizza_Per_Order
 FROM pizza_sales;
 ```
-picture
+![Local Image](Images_KPIs/Avg_Pizza_Per_Order.jpg)
