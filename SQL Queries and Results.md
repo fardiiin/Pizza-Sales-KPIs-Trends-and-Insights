@@ -61,3 +61,14 @@ SELECT ROUND(CAST(SUM(quantity) AS DECIMAL) / COUNT(DISTINCT order_id) , 2) AS A
 FROM pizza_sales;
 ```
 ![Local Image](Images_KPIs/Avg_Pizza_Per_Order.jpg)
+
+## Daily Trend
+
+## Monthly Trend
+
+## Sales Percentage of Pizza Category
+## Sales Percentage of Pizza Size
+## Top 5 Best Sellers by Revenue
+## Bottom 5 Sellers by Revenue
+## Top 5 Best Sellers by Quantity
+## Bottom 5 Sellers by Quantity
